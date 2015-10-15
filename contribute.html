@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <link rel="icon" type="image/png" href="/images/logo.png">
+
+    <title>Contribute</title>
+
+    <link href="/stylesheets/normalize.css" rel="stylesheet" /><link href="/stylesheets/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="/javascripts/all.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/0.5.9/lunr.min.js" type="text/javascript"></script>
+  </head>
+
+  <body class="contribute">
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header"><button class="navbar-toggle" data-target="#navbar-collapse-8352500864" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button>
+<a class="navbar-brand" href="/">          Sentry
+</a></div><div class="collapse navbar-collapse" id="navbar-collapse-8352500864"><ul class="navbar-left nav navbar-nav"><li><a href="/heroes/">Heroes</a></li>          <!--
+<li><a href="">Items</a></li><li><a href="">Mechanics</a></li><li><a href="">Discuss</a></li><li><a href="">About</a></li>          -->
+</ul><ul class="navbar-right nav navbar-nav"><li><a href="https://forum.sentryguides.com">Forum</a></li><li><a href="https://github.com/jgillich/sentry">GitHub</a></li></ul></div>
+  </div>
+</nav>    <div class="container">
+        <div class="row">
+    <div class="col-md-9">
+<div class="panel panel-default">        <div class="panel-body">
+          <h1>Contribute</h1>
+          <p>Sentry is community driven, everyone can help improving it. Next to each guide,
+you will find a big blue <a href="http://prose.io/#jgillich/sentry/edit/master/source/contribute.md" class="btn btn-info btn-xs">Edit</a> button, all you need
+is a account on <a href="https://github.com">GitHub</a>. After you made your changes, you
+can save them to submit them for review.</p>
+
+<p>If you know how to use Git, you can also download the <a href="https://github.com/jgillich/sentry">entire source code of Sentry</a>
+and make changes directly on your computer. Sentry uses the <a href="https://middlemanapp.com">Middleman</a>
+static site generator, so you'll need that one, too.</p>
+
+<h3 id="formatting">Formatting</h3>
+
+<h4 id="tooltips">Tooltips</h4>
+
+<p>Tooltips are created using the <code>ability</code>, <code>hero</code> or <code>item</code> helpers. Example:</p>
+
+<pre><code>&lt;%= ability :crystal_maiden_frostbite %&gt;
+</code></pre>
+
+<p>Renders as: <a href="#" data-toggle="tooltip" data-html="true" data-placement="auto" title="       &lt;img src=&quot;/images/dota/abilities/crystal_maiden_frostbite_lg.png&quot; width=&quot;32&quot; height=&quot;32&quot; class=&quot;img-rounded&quot;&gt; Frostbite&lt;/b&gt;       &lt;br&gt;Encases an enemy unit in ice, prohibiting movement and attack, while dealing 50 damage every half-second. Lasts 10 seconds on creeps level 6 or lower.       &lt;br&gt;DAMAGE PER HALF-SECOND: &lt;span class=&quot;attribVal&quot;&gt;50&lt;/span&gt;&lt;br /&gt; HERO DURATION: &lt;span class=&quot;attribVal&quot;&gt;1.5 / 2 / 2.5 / 3&lt;/span&gt;&lt;br /&gt; HERO TOTAL DAMAGE: &lt;span class=&quot;attribVal&quot;&gt;150 / 200 / 250 / 300&lt;/span&gt;&lt;br /&gt; CREEP DURATION: &lt;span class=&quot;attribVal&quot;&gt;10 / 10 / 10 / 10&lt;/span&gt;&lt;br /&gt; CREEP TOTAL DAMAGE: &lt;span class=&quot;attribVal&quot;&gt;1000&lt;/span&gt;&lt;br&gt;&lt;div class=&quot;cooldownMana&quot;&gt;&lt;div class=&quot;mana&quot;&gt;&lt;img alt=&quot;Mana Cost&quot; title=&quot;Mana Cost&quot; class=&quot;manaImg&quot; src=&quot;http://cdn.dota2.com/apps/dota2/images/tooltips/mana.png&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt; 115/125/140/150&lt;/div&gt;&lt;div class=&quot;cooldown&quot;&gt;&lt;img alt=&quot;Cooldown&quot; title=&quot;Cooldown&quot; class=&quot;cooldownImg&quot; src=&quot;http://cdn.dota2.com/apps/dota2/images/tooltips/cooldown.png&quot; width=&quot;16&quot; height=&quot;16&quot; border=&quot;0&quot; /&gt; 9/8/7/6&lt;/div&gt;&lt;br clear=&quot;left&quot; /&gt;&lt;/div&gt;     "><img src="/images/dota/abilities/crystal_maiden_frostbite_lg.png" height="16" class="img-rounded" /> Frostbite</a></p>
+
+<h4 id="frontmatter">Frontmatter</h4>
+
+<p>Frontmatter is the block at the start of a file. It looks like this:</p>
+
+<pre><code>---
+title: Crystal Maiden Guide
+hero: crystal_maiden
+layout: hero
+index: true
+---
+</code></pre>
+
+<p>It defines some general properties about our guide and is not part of the guide itself.</p>
+
+<ul>
+  <li>title: The title of the site</li>
+  <li>hero: The hero id, same as file name</li>
+  <li>index: Whether the guide is shown on the site</li>
+</ul>
+
+        </div>
+</div>    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-muted">
+            Dota 2 is a registered trademark of Valve Corporation.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
